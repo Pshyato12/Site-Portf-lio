@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navegação */
+header {
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    transition: background-color 0.3s;
+}
+
+.navbar {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 25px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.menu a {
+    color: #475569;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.menu a:hover {
+    background-color: #e0f2fe;
+    color: #0284c7;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #0f172a;
+}
+
+#botaoTema {
+    padding: 9px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #0f172a;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: transform 0.2s;
+}
+
+#botaoTema:hover {
+    transform: scale(1.03);
+}
+
+/* Conteúdo Principal e Seções */
+.conteudo {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero, .secao {
+    scroll-margin-top: 80px;
+    padding: 4rem 1rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.hero {
+    text-align: center;
+}
+
+.perfil-img {
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #0284c7;
+    box-shadow: 0 8px 20px rgba(2, 132, 199, 0.2);
+    margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.subtitulo {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto 2rem auto;
+    font-size: 1.15rem;
+    color: #475569;
+}
+
+/* Títulos e Cards */
+.secao h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #0284c7;
+}
+
+.card-destaque {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card-destaque p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    text-align: justify;
+}
+
+.card-destaque p:last-child {
+    margin-bottom: 0;
+}
+
+.grid-hobbys {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #0284c7;
+}
+
+.card h3 {
+    color: #0284c7;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.card p {
+    margin-bottom: 0.9rem;
+}
+
+/* Contato */
+.contato {
+    border-bottom: none;
+}
+
+.contato .card-destaque {
+    text-align: center;
+    max-width: 450px;
+}
+
+.btn {
+    padding: 12px 26px;
+    background-color: #0284c7;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #0369a1;
+    transform: translateY(-2px);
+}
+
+.oculto {
+    display: none;
+}
+
+#email-exibido {
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0284c7;
+    padding: 10px;
+    background-color: #e0f2fe;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1e293b;
+    color: #f8fafc;
+    font-size: 0.95rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ================= MODO ESCURO ================= */
+body.escuro {
+    background-color: #0f172a;
+    color: #f1f5f9;
+}
+
+body.escuro header {
+    background-color: #1e293b;
+}
+
+body.escuro .menu a {
+    color: #cbd5e1;
+}
+
+body.escuro .menu a:hover {
+    background-color: #334155;
+    color: #38bdf8;
+}
+
+body.escuro .menu-toggle {
+    color: #f8fafc;
+}
+
+body.escuro #botaoTema {
+    background-color: #facc15;
+    color: #0f172a;
+}
+
+body.escuro .hero,
+body.escuro .secao {
+    border-bottom-color: #334155;
+}
+
+body.escuro .subtitulo {
+    color: #94a3b8;
+}
+
+body.escuro .secao h2,
+body.escuro .card h3 {
+    color: #38bdf8;
+}
+
+body.escuro .card,
+body.escuro .card-destaque {
+    background-color: #1e293b;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+body.escuro .card {
+    border-top-color: #38bdf8;
+}
+
+body.escuro .btn {
+    background-color: #38bdf8;
+    color: #0f172a;
+}
+
+body.escuro .btn:hover {
+    background-color: #7dd3fc;
+}
+
+body.escuro #email-exibido {
+    background-color: #0f172a;
+    color: #38bdf8;
+}
+
+.hobby-img-jogo {
+    width: auto;
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 10px;
+    margin: 0.5rem auto 1.5rem auto;
+    display: block;
+}
+
+.hobby-img-poema {
+    width: auto;
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 10px;
+    margin: 1rem auto 0 auto;
+    display: block;
+}
+
+
+/* Cursor de lupa nas imagens clicáveis */
+.hobby-img-jogo,
+.hobby-img-poema {
+    cursor: zoom-in;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.hobby-img-jogo:hover,
+.hobby-img-poema:hover {
+    transform: scale(1.02);
+    opacity: 0.92;
+}
+
+/* Fundo escuro e imagem ampliada (Lightbox) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    inset: 0;
+    background-color: rgba(15, 23, 42, 0.92);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal.aberto {
+    display: flex;
+}
+
+.modal-conteudo {
+    max-width: 92%;
+    max-height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+}
+
+.fechar-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.fechar-modal:hover {
+    color: #38bdf8;
+}
+
+
+/* ================= RESPONSIVIDADE MOBILE ================= */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 1rem 1.5rem;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        align-items: stretch;
+    }
+
+    body.escuro .menu {
+        background-color: #1e293b;
+    }
+
+    .menu.ativo {
+        display: flex;
+    }
+}

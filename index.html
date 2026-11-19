@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfolio - Erick</title>
+    <link rel="icon" href="img/img-favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>  
+    <header>
+        <nav class="navbar">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+            
+            <div class="menu" id="nav-links">
+                <a href="#home">Home</a>
+                <a href="#sobreMim">Sobre Mim</a>
+                <a href="#hobbys">Hobbys</a>
+                <a href="#contato">Contato</a>    
+            </div>
+
+            <button id="botaoTema">
+                <span id="iconeTema">☾</span>
+                <span id="textoBotao">Modo escuro</span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <!-- HOME -->
+        <section id="home" class="hero">
+            <img src="img/img-perfil.jpg" alt="Foto de perfil do Erick" class="perfil-img">
+            <h1>Bem-vindo ao meu site!</h1>
+            <p class="subtitulo">Graduando em Análise e Desenvolvimento de Sistemas (ADS) na UDF, apaixonado por tecnologia, jogos competitivos e escrita.</p>
+        </section>
+
+        <!-- SOBRE MIM -->
+        <section id="sobreMim" class="secao">
+            <h2>Sobre mim</h2>
+            <div class="card-destaque">
+                <p>Olá, meu nome é <strong>Erick</strong>, graduando em Análise e Desenvolvimento de Sistemas (ADS) na UDF, e este é meu projeto de site Portfólio e nele você encontrará um pequeno resumo sobre mim.</p>
+                <p>Gostaria de começar contando que desde que me entenda por gente sempre fui cercado por tecnologia, sendo influenciado pelo meu pai que sempre gostou de se manter "na atualidade" com a tecnologia e por meus primos que sempre que passava tempo com eles, sempre estávamos em contato com a tecnologia, seja jogando num PS2 ou nos computadores da época e daí também vem meu apego por jogos no geral.</p>
+            </div>
+        </section>
+        
+                    <!-- HOBBYS -->
+        <section id="hobbys" class="secao">
+            <h2>Meus hobbys</h2>
+            <p class="subtitulo">Gostaria de deixar 2 hobbys: um que eu vivo fazendo e outro de curiosidade que talvez leve mais a sério em algum momento da vida.</p>
+            
+            <div class="grid-hobbys">
+                <article class="card">
+                    <h3>Jogar jogos competitivos</h3>
+                    
+                    <p><strong>1. Brawl Stars:</strong> Um jogo de diversos modos lançado em 2018 em que costumo jogar com meus amigos, principalmente, sendo meu maior objetivo nele estar sempre competindo com meus amigos para ver quem tem mais troféus, quem está num ranking mais alto na ranqueada, está tendo um melhor desempenho nas partidas e principalmente nos divertir enquanto competimos, sendo esse meu carro-chefe.</p>
+                    <img src="img/img-brawlstars.jpg" alt="Print da conta PSHYRICH no Brawl Stars" class="hobby-img-jogo">
+
+                    <p><strong>2. Clash Royale:</strong> Um jogo que em sua maior parte do tempo é uma disputa para ver quem derruba a torre do adversário primeiro em que eu e meus amigos competimos para ver quem está com mais troféus e está tendo melhor desempenho geral, sendo esse o que eu sou o pior do grupo.</p>
+                    <img src="img/img-clashroyale.jpg" alt="Print da conta Pshyrick no Clash Royale" class="hobby-img-jogo">
+                </article>
+
+                <article class="card">
+                    <h3>Escrever</h3>
+                    <p>Não sei de onde tirei esse hobby, só me lembro que um dia no 1° ano do Ensino Médio decidi escrever sobre coisas que estavam passando pela minha cabeça.</p>
+                    <p>Com o tempo comecei a mudar mais meu modelo de escrita e tentar adaptar nos estilos de poema/poesia falando sobre os temas que estavam passando pela minha mente e diria que acabou me ajudando com algumas questões como ansiedade e me ajudar a organizar as ideias na cabeça.</p>
+                    <img src="img/img-texto.jpg" alt="Poema autoral intitulado Tempo" class="hobby-img-poema">
+                </article>
+            </div>
+        </section>
+
+
+        <!-- CONTATO -->
+        <section id="contato" class="secao contato">
+            <h2>Contato</h2>
+            <div class="card-destaque">
+                <button id="btn-mensagem" class="btn">Mostrar E-mail</button>
+                <p id="email-exibido" class="oculto">pshyato12@gmail.com</p>
+            </div>
+        </section>
+    </main>
+
+        <!-- MODAL PARA AMPLIAR IMAGENS -->
+    <div id="modal-imagem" class="modal">
+        <span id="fechar-modal" class="fechar-modal">&times;</span>
+        <img id="img-ampliada" class="modal-conteudo" alt="Imagem ampliada">
+    </div>
+
+
+    <footer>
+        <p>&copy; 2026 Todos os Direitos Reservados | Desenvolvido por: <a href="mailto:pshyato12@gmail.com">pshyato12@gmail.com</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
